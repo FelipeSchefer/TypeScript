@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start-lite-server": "lite-server",
+    "start": "tsc && node dist/app.js",
+    "watch-and-run": "tsc -w & nodemon -q -w dist dist/app.js"
   },
   "keywords": [
     "typescript",
@@ -14,6 +16,7 @@
   "author": "Maximilian Schwarzmüller",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "nodemon": "^2.0.21"
   }
 }
