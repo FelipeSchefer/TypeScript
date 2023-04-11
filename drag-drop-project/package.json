@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-lite-server": "lite-server",
+    "server": "lite-server",
     "start": "tsc && node dist/app.js",
-    "watch-and-run": "tsc -w & nodemon -q -w dist dist/app.js"
+    "watch": "tsc -w & nodemon -q -w dist dist/app.js"
   },
   "keywords": [
     "typescript",
